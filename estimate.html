@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>免费估价 - 谦信收藏网</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>谦信收藏网</h1>
+                <p>专业 · 诚信 · 透明</p >
+            </div>
+            <div class="contact">
+                <a href=" " class="btn btn-outline">📞 400-888-8888</a >
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">首页</a ></li>
+                <li><a href="price.html">行情中心</a ></li>
+                <li><a href="estimate.html">免费估价</a ></li>
+                <li><a href="#about">关于我们</a ></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>免费在线估价</h1>
+                <p>上传藏品照片，填写基本信息，我们的专业顾问将在24小时内联系您，提供参考价格。</p >
+            </div>
+        </section>
+
+        <section class="estimate-form">
+            <div class="container">
+                <form id="estimateForm" action="https://your-backend-api.com/submit" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="name">姓名 *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">手机号 *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">藏品类别 *</label>
+                        <select id="category" name="category" required>
+                            <option value="">请选择</option>
+                            <option value="stamp">邮票</option>
+                            <option value="paper_money">纸币</option>
+                            <option value="coin">纪念币</option>
+                            <option value="gold_silver">金银币</option>
+                            <option value="other">其他</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name_detail">藏品名称（如：1980年猴票） *</label>
+                        <input type="text" id="name_detail" name="name_detail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">藏品描述（品相、版别、数量等）</label>
+                        <textarea id="description" name="description" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="images">上传照片（最多5张，每张不超过5MB）</label>
+                        <input type="file" id="images" name="images[]" accept="image/*" multiple>
+                        <small>请拍摄清晰的正反面照片，有助于准确估价</small>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="agree" required> 我已阅读并同意《隐私政策》，授权平台使用信息进行估价联系。
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">提交估价申请</button>
+                    </div>
+                </form>
+                <div class="notice">
+                    <p>※ 估价结果仅供参考，最终成交价以实物鉴定为准。</p >
+                    <p>※ 我们承诺您的个人信息仅用于估价服务，绝不泄露。</p >
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="about">
+        <div class="container">
+            <div class="footer-info">
+                <p>© 2025 谦信收藏网 版权所有</p >
+                <p>公司地址：北京市西城区黄寺大街</p >
+                <p>ICP备案号：京ICP备2025000001号-1</p >
+                <p><a href="privacy.html">隐私政策</a > | <a href="terms.html">用户协议</a ></p >
+            </div>
+        </div>
+    </footer>
+
+    <div class="float-phone">
+        <a href="tel:400-888-8888">📞 免费咨询</a >
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
