@@ -1,0 +1,99 @@
+/* 平板设备 (768px - 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 手机设备 (≤768px) */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 var(--spacing-sm);
+    }
+    
+    /* 导航栏 */
+    .header-content {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--spacing-sm);
+    }
+    
+    /* 首屏 */
+    .hero-section {
+        padding: var(--spacing-md) 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-section p {
+        font-size: 1rem;
+    }
+    
+    /* 按钮组 */
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    /* 服务卡片 */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* 搜索框 */
+    .search-box {
+        flex-direction: column;
+    }
+    
+    .search-box input,
+    .search-box button {
+        width: 100%;
+    }
+    
+    /* 价格表格 */
+    .price-table {
+        overflow-x: auto;
+    }
+    
+    .price-table table {
+        min-width: 600px;
+    }
+}
+
+/* 小屏手机 (≤480px) */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.4rem;
+    }
+    
+    .main-nav a {
+        font-size: 0.9rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
